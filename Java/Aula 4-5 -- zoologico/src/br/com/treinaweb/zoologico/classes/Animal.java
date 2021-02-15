@@ -27,6 +27,12 @@ public class Animal {
 		this.age = age;
 	}
 	
+	public Animal(String name, int age, String species) {
+		this.name = name;
+		this.age = age;
+		this.species = species;
+	}
+	
 	public void makeNoise() {
 		System.out.println("Barulho do animal!");
 	}
