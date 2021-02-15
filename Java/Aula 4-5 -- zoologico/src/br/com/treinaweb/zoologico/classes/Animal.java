@@ -1,6 +1,6 @@
 package br.com.treinaweb.zoologico.classes;
 
-public class Animal {
+public abstract class Animal {
 
 	private String name;
 	private String species;
