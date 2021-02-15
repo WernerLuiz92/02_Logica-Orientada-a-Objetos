@@ -4,6 +4,6 @@ public class Animal {
 
 	private String nome;
 	private String especie;
-	int idade;
+	private int idade;
 	
 }
