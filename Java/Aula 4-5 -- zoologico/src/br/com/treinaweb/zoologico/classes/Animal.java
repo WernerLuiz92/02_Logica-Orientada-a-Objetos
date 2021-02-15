@@ -2,29 +2,38 @@ package br.com.treinaweb.zoologico.classes;
 
 public class Animal {
 
-	private String nome;
-	private String especie;
-	private int idade;
+	private String name;
+	private String species;
+	private int age;
 	
-	public String getNome() {
-		return nome;
+	public String getName() {
+		return name;
 	}
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
-	
-	public String getEspecie() {
-		return especie;
-	}
-	public void setEspecie(String especie) {
-		this.especie = especie;
+	public void setName(String name) {
+		this.name = name;
 	}
 	
-	public int getIdade() {
-		return idade;
+	public String getSpecies() {
+		return species;
 	}
-	public void setIdade(int idade) {
-		this.idade = idade;
+	public void setSpecies(String species) {
+		this.species = species;
+	}
+	
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+	
+	public void makeNoise() {
+		System.out.println("Barulho do animal!");
+	}
+	
+	public Boolean isAdult() {
+		
+		return age >= 1;
 	}
 	
 	
