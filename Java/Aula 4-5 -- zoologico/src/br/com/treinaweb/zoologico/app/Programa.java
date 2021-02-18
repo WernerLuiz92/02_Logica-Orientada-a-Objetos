@@ -6,7 +6,7 @@ public class Programa {
 
 	public static void main(String[] args) {
 
-		Animal cachorro = new Animal("Princesa", 4, "Canina");
+		Cachorro cachorro = new Cachorro("Princesa", 4, "Canina");
 		
 		System.out.println("Olá, seu animal é da espécie " + cachorro.getSpecies());
 		System.out.println("O nome do seu animal é " + cachorro.getName());
