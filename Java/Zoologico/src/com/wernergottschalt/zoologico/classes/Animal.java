@@ -1,10 +1,18 @@
-package br.com.treinaweb.zoologico.classes;
+package com.wernergottschalt.zoologico.classes;
 
 public abstract class Animal {
 
 	private String name;
 	private String species;
 	private int age;
+	private Boolean isAlive;
+	
+	public Animal(String name, int age, String species) {
+		this.name = name;
+		this.age = age;
+		this.species = species;
+		this.isAlive = true;
+	}
 	
 	public String getName() {
 		return name;
@@ -27,20 +35,15 @@ public abstract class Animal {
 		this.age = age;
 	}
 	
-	public Animal(String name, int age, String species) {
-		this.name = name;
-		this.age = age;
-		this.species = species;
+	public Boolean getIsAlive() {
+		return isAlive;
 	}
-	
-	public void makeNoise() {
-		System.out.println("Barulho do animal!");
-	}
+
+	public abstract void makeNoise();
 	
 	public Boolean isAdult() {
 		
 		return age >= 1;
 	}
-	
 	
 }
