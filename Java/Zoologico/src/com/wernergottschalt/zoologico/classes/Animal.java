@@ -35,7 +35,7 @@ public abstract class Animal {
 		this.age = age;
 	}
 	
-	public Boolean getIsAlive() {
+	public Boolean isAlive() {
 		return isAlive;
 	}
 
@@ -43,7 +43,16 @@ public abstract class Animal {
 	
 	public Boolean isAdult() {
 		
-		return age >= 1;
+		if (isAlive) {
+			return age >= 1;
+		} else {
+			return false;
+		}
+		
+	}
+	
+	public void toDie( ) {
+		this.isAlive = false;
 	}
 	
 }
