@@ -6,11 +6,25 @@ public class Cachorro extends Animal {
 		super(name, age, "Canina");
 		
 	}
+	
+	@Override
+	public Boolean isAdult() {
+		
+		if (isAlive) {
+			return age >= 2;
+		} else {
+			return false;
+		}
+		
+	}
 
 	@Override
 	public void makeNoise() {
-		
-		System.out.println("Au Au");
+		if (isAlive()) {
+			System.out.println("Au Au");			
+		} else {
+			System.out.println(" ... ");
+		}
 		
 	}
 	

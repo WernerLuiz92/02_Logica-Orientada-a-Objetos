@@ -6,8 +6,10 @@ public class Programa {
 
 	public static void main(String[] args) {
 
-		Cachorro cachorro = new Cachorro("Princesa", 4);
+		Cachorro cachorro = new Cachorro("Princesa", 1);
 		Gato gato = new Gato("Missie", 6);
+		Cachorro cachorro2 = new Cachorro("Beethoven", 12);
+		cachorro2.toDie();
 		
 		System.out.println("Ola, seu animal e da especie " + cachorro.getSpecies());
 		System.out.println("O nome do seu animal e " + cachorro.getName());
@@ -35,6 +37,9 @@ public class Programa {
 		System.out.println("====================");
 		System.out.println("Barulho do gato: ");
 		gato.makeNoise();
+		System.out.println("====================");
+		System.out.println("Barulho do cachorro2: ");
+		cachorro2.makeNoise();
 		
 	}
 

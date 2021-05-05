@@ -9,11 +9,12 @@ public class Gato extends Animal {
 
 	@Override
 	public void makeNoise() {
-		
-		System.out.println("Miau");
+		if (isAlive()) {
+			System.out.println("Miau");			
+		} else {
+			System.out.println(" ... ");
+		}
 		
 	}
 	
-	
-
 }
