@@ -49,8 +49,10 @@ public abstract class Animal implements Animalable
 		return isAlive;
 	}
 
+	@Override
 	public abstract void makeNoise();
 	
+	@Override
 	public Boolean isAdult() 
 	{
 		
@@ -62,6 +64,7 @@ public abstract class Animal implements Animalable
 		
 	}
 	
+	@Override
 	public final void toDie( ) 
 	{
 		this.isAlive = false;
