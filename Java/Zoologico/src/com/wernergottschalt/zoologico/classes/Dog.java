@@ -1,8 +1,8 @@
 package com.wernergottschalt.zoologico.classes;
 
-public class Cachorro extends Animal {
+public class Dog extends Animal {
 
-	public Cachorro(String name, int age) {
+	public Dog(String name, int age) {
 		super(name, age, "Canina");
 		
 	}
